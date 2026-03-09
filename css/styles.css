@@ -1,0 +1,110 @@
+/* Color Palette
+# - #333333
+# - ffffff
+# - 4A5D4A
+# - color 4
+*/
+
+/* Global styles 
+------------------------------------*/
+html { /* STEP 5 COMPLETE */
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* General Body Styles */
+body {
+    background-color: #F0F4EF; /* Main light green background */
+    color: #333333;            /* Dark charcoal for readability */
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.5;
+    margin: 0;/* was previously 2; STEP 3 Part D COMPLETE */ 
+    padding: 0;
+    font-weight: 400;
+}
+
+/* Header and Footer */
+header {
+    background-color: #B2C2B2; /* Slightly darker sage */
+    color: #ffffff;            /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+.profile-img {  /* STEP 4 Part A & B  COMPLETE */
+   /* width: 300px;
+    height: 300px; STEP 6 Part E COMPLETE ( CANCELLING OUT WIDTH/HEIGHT/ MARGIN RIGHT*/ 
+    border-radius:  50% ; /* STEP 4 Part C COMPLETE */
+    /*float: left; /* STEP 4 Part E COMPLETE */
+    /*margin-right: 30px; /* STEP 4 Part G COMPLETE */
+
+}
+footer {
+    background-color: #B2C2B2; /* Slightly darker sage */
+    color: #ffffff;            /* White text for contrast */
+    padding: 20px;
+    text-align: center; /* STEP 3 Part e COMPLETE */
+}
+
+/* Sections: Work Experience & Education */
+.work-experience, .education {
+    background-color: #D7E5D7; /* Soft mint background */
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;        /* Softens the corners */
+    max-width: 800px;
+}
+
+/* Adjusting Font Colors for Headers inside sections */
+h2 {
+    font-family:'Fjalla One', sans-serif;
+    color: #4A5D4A;  
+     margin: 0; /* was previously 5; STEP 3 Part B COMPLETE & STEP 4 Part D*/
+     font-weight: 400;
+     font-size: 2.0rem;  
+}
+h3 {
+    font-family:'Fjalla One', sans-serif;
+    color: #4A5D4A;  
+    font-weight: 700;
+    margin: 5;
+    font-size: 1.0rem;    /* Deep forest green for titles */
+}
+/* --- Global Styles --- */
+
+.content-wrap { /*-- STEP 2 Part D COMPLETE */
+    /*width: 950px; STEP 1 Part B */ 
+    max-width: 950px;
+    margin: 0 auto; /* STEP 1 COMPLETE */
+    padding: 50px; /* STEP 3 Part A COMPLETE */
+    overflow: hidden; /* STEP 4 Part F COMPLETE*/
+}
+
+
+.contact-info a { /* STEP 3 Part g COMPLETE */
+    padding: 10px; 
+    display: inline-block; /* Allows the 10px padding to push other elements away */
+}
+.column-narrow { /* STEP 6 Part D COMPLETE */
+    clear: left;
+    width: 30%;
+    float: left;
+    padding-right: 3%; /* Adds a small gap between the columns */
+    min-height: 175px;
+}
+
+.column-wide { /* STEP 6 Part E COMPLETE */
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Work Experience
+------------------------------------*/
+
+
+
+/* Education
+------------------------------------*/
