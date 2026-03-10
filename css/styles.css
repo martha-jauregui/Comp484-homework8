@@ -7,12 +7,43 @@
 
 /* Global styles 
 ------------------------------------*/
-html { /* STEP 5 COMPLETE */
+html {
 box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+nav {
+    background-color: #0b950b; /* A darker green to contrast your header */
+    padding: 0;
+    text-align: center;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1000;
+    color: #ffffff;
+}
+nav .content-wrap {
+    padding: 5px 20px; 
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+    display: block;
+}
+
+nav a {
+    font-size: 0.8rem;
+    font-family:'Fjalla One', sans-serif;
+    line-height: 1;    /* no extra vertical space around text */
+    display: inline-block;
+    padding: 5px 15px; /* Adds space horizontally, but keeps it thin vertically */
+    color: white;
+    text-decoration: none;
 }
 
 /* General Body Styles */
@@ -21,7 +52,7 @@ body {
     color: #333333;            /* Dark charcoal for readability */
     font-family: 'Mulish', sans-serif;
     line-height: 1.5;
-    margin: 0;/* was previously 2; STEP 3 Part D COMPLETE */ 
+    margin: 0;
     padding: 0;
     font-weight: 400;
 }
@@ -29,23 +60,21 @@ body {
 /* Header and Footer */
 header {
     background-color: #B2C2B2; /* Slightly darker sage */
-    color: #ffffff;            /* White text for contrast */
+    color: #ffffff;           
     padding: 20px;
     text-align: center;
+    padding-top: 20px; 
 }
-.profile-img {  /* STEP 4 Part A & B  COMPLETE */
-   /* width: 300px;
-    height: 300px; STEP 6 Part E COMPLETE ( CANCELLING OUT WIDTH/HEIGHT/ MARGIN RIGHT*/ 
-    border-radius:  50% ; /* STEP 4 Part C COMPLETE */
-    /*float: left; /* STEP 4 Part E COMPLETE */
-    /*margin-right: 30px; /* STEP 4 Part G COMPLETE */
 
+.profile-img {  
+    border-radius:  50% ; 
 }
+
 footer {
     background-color: #B2C2B2; /* Slightly darker sage */
     color: #ffffff;            /* White text for contrast */
     padding: 20px;
-    text-align: center; /* STEP 3 Part e COMPLETE */
+    text-align: center;
 }
 
 /* Sections: Work Experience & Education */
@@ -53,7 +82,7 @@ footer {
     background-color: #D7E5D7; /* Soft mint background */
     margin: 20px auto;
     padding: 15px;
-    border-radius: 8px;        /* Softens the corners */
+    border-radius: 8px; /* Softens the corners */
     max-width: 800px;
 }
 
@@ -61,7 +90,7 @@ footer {
 h2 {
     font-family:'Fjalla One', sans-serif;
     color: #4A5D4A;  
-     margin: 0; /* was previously 5; STEP 3 Part B COMPLETE & STEP 4 Part D*/
+     margin: 0; 
      font-weight: 400;
      font-size: 2.0rem;  
 }
@@ -74,37 +103,51 @@ h3 {
 }
 /* --- Global Styles --- */
 
-.content-wrap { /*-- STEP 2 Part D COMPLETE */
-    /*width: 950px; STEP 1 Part B */ 
+.content-wrap { 
     max-width: 950px;
-    margin: 0 auto; /* STEP 1 COMPLETE */
-    padding: 50px; /* STEP 3 Part A COMPLETE */
-    overflow: hidden; /* STEP 4 Part F COMPLETE*/
+    margin: 0 auto; 
+    padding: 50px; 
+    overflow: hidden; 
 }
 
-
-.contact-info a { /* STEP 3 Part g COMPLETE */
+.contact-info a { 
     padding: 10px; 
     display: inline-block; /* Allows the 10px padding to push other elements away */
 }
-.column-narrow { /* STEP 6 Part D COMPLETE */
+.column-narrow { 
     clear: left;
     width: 30%;
     float: left;
     padding-right: 3%; /* Adds a small gap between the columns */
     min-height: 175px;
+    margin-bottom: 40px;
 }
 
-.column-wide { /* STEP 6 Part E COMPLETE */
+.column-wide { 
     width: 70%;
     float: left;
     min-height: 225px;
+    margin-bottom: 40px;
+}
+.contact-info i {
+    margin-right: 8px; /* Adds space between the icon and the text */
+    color: #4A5D4A;    /* Matches your sage green headers */
+    font-size: 1.5rem; /* Makes the icons slightly larger */
+}
+.image-bg {
+    /* The outer container holds the image */
+    background-image: url('../images/forest.jpg'); /* Use your image path here */
+}
+.alpha-bg {
+    /* The inner container holds the transparent color */
+    /* 0.75 is the 'Alpha' transparency from your slide */
+    background-color: rgba(6, 80, 6, 0.6); 
+    padding: 60px; 
+    width: 100%;
+    min-height: 100%;
 }
 
-/* Work Experience
-------------------------------------*/
-
-
-
-/* Education
-------------------------------------*/
+/* Ensure the text is white so it stands out against the green tint */
+.alpha-bg h2, .alpha-bg h3, .alpha-bg p {
+    color: #ffffff;
+}
