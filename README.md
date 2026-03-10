@@ -1,6 +1,8 @@
 Pages link: https://martha-jauregui.github.io/Comp484-homework8/
 
 1.	Add a navigation menu to your resume site.
+
+2.	
 a)For this HW add a navigation menu without using a list.
 ADDED NAVIGATION ON LINE 36
 
